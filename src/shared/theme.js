@@ -12,7 +12,7 @@ export const theme = {
         tablet: '768px',
         desktop: '1024px',
     },
-    fontSize: {
+    fontsize: {
         small: '0.75rem',
         medium: '1rem',
         large: '1.25rem',

@@ -1,6 +1,4 @@
-import Dashboard from './pages/Dashboard'
-import Error from './pages/Error'
-import Login from './pages/Login'
+import { Dashboard, Login, Error } from './pages/Index'
 import { GlobalStyle } from './shared/Global'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './shared/theme'
