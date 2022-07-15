@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Dashboard from './pages/Dashboard'
+import Error from './pages/Error'
+import Login from './pages/Login'
+import { GlobalStyle } from './shared/Global'
+import { ThemeProvider } from 'styled-components'
+import { theme } from './shared/theme'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Dashboard />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path='*' element={<Error />} />
+                </Routes>
+                <GlobalStyle />
+            </BrowserRouter>
+        </ThemeProvider>
+    )
 }
 
-export default App;
+export default App
