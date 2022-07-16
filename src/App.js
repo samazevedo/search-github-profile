@@ -7,13 +7,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
     return (
         <ThemeProvider theme={theme}>
+            <GlobalStyle />
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Dashboard />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='*' element={<Error />} />
                 </Routes>
-                <GlobalStyle />
             </BrowserRouter>
         </ThemeProvider>
     )

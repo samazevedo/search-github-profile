@@ -1,11 +1,12 @@
 export const theme = {
     fonts: {
-        primary: '"Roboto", sans-serif',
+        primary: '"K2D", sans-serif',
     },
     colors: {
-        primary: '#00bcd4',
-        secondary: '#ff9800',
-        background: '#fafafa',
+        scubaBlue: '#00abc0',
+        bajaBlue: '#5F6DB0 ',
+        boneWhite: '#e9e2d6',
+        macawGreen: '#9bb53e',
     },
     breakpoints: {
         mobile: '576px',

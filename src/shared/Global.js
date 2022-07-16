@@ -1,17 +1,20 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-  @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap);
-
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
   *,
   *:before,
   *:after {
     box-sizing: border-box;
+ 
   }
+  html {
+    font-family:  ${({ theme }) => theme.fonts.primary};
+  }
+  
   body {
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;

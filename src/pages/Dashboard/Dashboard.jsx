@@ -1,5 +1,11 @@
+import { ContainerStyled } from '../../components/container/Container.styled'
+
 const Dashboard = () => {
-    return <div>Dashboard</div>
+    return (
+        <ContainerStyled>
+            <h1>Dashboard</h1>
+        </ContainerStyled>
+    )
 }
 
 export default Dashboard
