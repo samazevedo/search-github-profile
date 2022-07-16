@@ -1,13 +1,20 @@
 import { useContext } from 'react'
-import { ContainerStyled } from '../../components/Container/Container.styled'
 import { GithubContext } from '../../context/context'
+import { ContainerStyled, Info, Navbar, Search } from '../../components/Index'
+import { DashboardStyled } from './Dashboard.styled'
 
 const Dashboard = () => {
     const data = useContext(GithubContext)
     console.log(data)
     return (
         <ContainerStyled>
-            <h1>Dashboard</h1>
+            <DashboardStyled>
+                <Navbar />
+                <div className='dashboard-container'>
+                    <Search />
+                    <Info />
+                </div>
+            </DashboardStyled>
         </ContainerStyled>
     )
 }

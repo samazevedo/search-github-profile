@@ -1,5 +1,12 @@
-const Navbar = () => {
-    return <div>Navbar</div>
-}
+import { ButtonStyled } from '../Index'
+import { NavbarStyled } from './Navbar.styled'
 
-export default Navbar
+export const Navbar = () => {
+    return (
+        <NavbarStyled>
+            <div className='img-container'>image</div>
+            <h3>Welcome, username</h3>
+            <ButtonStyled>logout</ButtonStyled>
+        </NavbarStyled>
+    )
+}

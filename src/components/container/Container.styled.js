@@ -5,6 +5,7 @@ export const ContainerStyled = styled.main`
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
-    height: 100vh;
-    width: 100vw;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 `

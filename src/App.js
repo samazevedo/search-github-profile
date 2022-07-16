@@ -1,4 +1,4 @@
-import { Dashboard, Login, Error } from './pages/Index'
+import { Dashboard, Login, Error, SharedLayout } from './pages/Index'
 import { GlobalStyle } from './shared/Global'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './shared/theme'
@@ -10,9 +10,11 @@ function App() {
             <GlobalStyle />
             <BrowserRouter>
                 <Routes>
-                    <Route path='/' element={<Dashboard />} />
-                    <Route path='/login' element={<Login />} />
-                    <Route path='*' element={<Error />} />
+                    <Route path='/' element={<SharedLayout />}>
+                        <Route index element={<Dashboard />} />
+                        <Route path='login' element={<Login />} />
+                        <Route path='*' element={<Error />} />
+                    </Route>
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>

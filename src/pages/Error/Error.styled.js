@@ -5,15 +5,11 @@ export const ErrorStyled = styled.section`
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 1fr;
     justify-items: center;
+    align-items: center;
     width: 100%;
+    height: 100%;
+    margin-top: 10rem;
     & h1 {
-        align-self: flex-end;
         margin: 0;
-    }
-    & p {
-        align-self: flex-start;
-    }
-    & button {
-        align-self: flex-start;
     }
 `
