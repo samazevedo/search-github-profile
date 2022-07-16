@@ -5,9 +5,6 @@ export const ErrorStyled = styled.section`
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 1fr;
     justify-items: center;
-    font-size: ${({ theme }) => theme.fontsize.xxlarge};
-    background-color: ${({ theme }) => theme.colors.boneWhite};
-    color: ${({ theme }) => theme.colors.scubaBlue};
     width: 100%;
     & h1 {
         align-self: flex-end;
@@ -18,6 +15,5 @@ export const ErrorStyled = styled.section`
     }
     & button {
         align-self: flex-start;
-        font-size: ${({ theme }) => theme.fontsize.xxlarge};
     }
 `

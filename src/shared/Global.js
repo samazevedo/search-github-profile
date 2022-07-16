@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
   *,
   *:before,
   *:after {
@@ -18,7 +17,8 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
-
+    background-color: ${({ theme }) => theme.colors.boneWhite};
+    color: ${({ theme }) => theme.colors.scubaBlue};
   }
   img {
     max-width: 100%;
@@ -28,5 +28,17 @@ export const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
+  }
+  h1 {
+    font-size: ${({ theme }) => theme.fontsize.xxxlarge};
+  }
+  h2 {
+    font-size: ${({ theme }) => theme.fontsize.xxlarge};
+  }
+  h3 {
+    font-size: ${({ theme }) => theme.fontsize.xlarge};
+  }
+  h4 {
+    font-size: ${({ theme }) => theme.fontsize.large};
   }
 `

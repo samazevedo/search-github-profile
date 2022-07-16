@@ -1,4 +1,4 @@
-import { ContainerStyled } from '../../components/container/Container.styled'
+import { ContainerStyled } from '../../components/Container/Container.styled'
 import { ButtonStyled } from '../../components/Button/Button.styled'
 import { ErrorStyled } from './Error.styled'
 import { useNavigate } from 'react-router-dom'
@@ -14,7 +14,7 @@ const Error = () => {
         <ContainerStyled>
             <ErrorStyled>
                 <h1>404</h1>
-                <p>Page Not Found</p>
+                <h2>Page Not Found</h2>
                 <ButtonStyled onClick={handleClick}>Back Home</ButtonStyled>
             </ErrorStyled>
         </ContainerStyled>

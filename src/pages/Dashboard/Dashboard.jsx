@@ -1,4 +1,4 @@
-import { ContainerStyled } from '../../components/container/Container.styled'
+import { ContainerStyled } from '../../components/Container/Container.styled'
 
 const Dashboard = () => {
     return (
