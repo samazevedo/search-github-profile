@@ -17,4 +17,13 @@ export const DashboardStyled = styled.div`
         padding: 2rem;
         max-width: 100rem;
     }
+    & .user-followers-section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
 `
