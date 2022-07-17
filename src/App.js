@@ -8,6 +8,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyle />
+
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<SharedLayout />}>

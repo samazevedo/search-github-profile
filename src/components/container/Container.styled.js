@@ -7,4 +7,5 @@ export const ContainerStyled = styled.main`
     justify-content: center;
     width: 100%;
     height: 100%;
+    transition: all 0.2s ease-in-out;
 `
