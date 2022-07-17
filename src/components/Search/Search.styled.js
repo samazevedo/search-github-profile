@@ -3,16 +3,20 @@ import styled from 'styled-components'
 export const SearchStyled = styled.section`
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
     align-items: center;
-    justify-items: center;
+    margin-bottom: 1rem;
     & .search-form {
         position: relative;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 100%;
+        height: 100%;
     }
     & .search-form button {
         position: absolute;
@@ -23,7 +27,7 @@ export const SearchStyled = styled.section`
     & .search-form input {
         width: 100%;
         height: 3rem;
-        padding-left: 1rem;
+        padding-left: 3rem;
         border: none;
         border-radius: 0.5rem;
         background-color: #000;
@@ -40,8 +44,8 @@ export const SearchStyled = styled.section`
     & .search-icon {
         position: absolute;
         top: 0;
-        left: -1.3rem;
-        font-size: ${({ theme }) => theme.fontsize.large};
+        left: 0rem;
+        font-size: ${({ theme }) => theme.fontsize.medium};
         color: ${({ theme }) => theme.colors.boneWhite};
         background-color: #000;
         border-radius: 0.5rem;
@@ -49,6 +53,13 @@ export const SearchStyled = styled.section`
         width: 2rem;
     }
     & .requests {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         font-size: ${({ theme }) => theme.fontsize.xlarge};
+        align-self: center;
     }
 `

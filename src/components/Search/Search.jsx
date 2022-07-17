@@ -9,7 +9,9 @@ export const Search = () => {
                 <FiSearch className='search-icon' />
                 <ButtonStyled type='submit'>Search</ButtonStyled>
             </form>
-            <div className='requests'>Requests: 47/60</div>
+            <div className='requests'>
+                <span>Requests:</span> <span>47/60</span>{' '}
+            </div>
         </SearchStyled>
     )
 }

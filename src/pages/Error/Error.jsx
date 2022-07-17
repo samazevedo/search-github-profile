@@ -1,4 +1,4 @@
-import { ContainerStyled } from '../../components/Container/Container.styled'
+import { ContainerStyled } from '../../components/Index'
 import { ButtonStyled } from '../../components/Button/Button.styled'
 import { ErrorStyled } from './Error.styled'
 import { useNavigate } from 'react-router-dom'

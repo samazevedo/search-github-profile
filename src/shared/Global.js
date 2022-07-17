@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   html {
     font-family:  ${({ theme }) => theme.fonts.primary};
+    font-size: 10px;
   }
   
   body {

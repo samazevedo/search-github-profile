@@ -1,20 +1,15 @@
 import styled from 'styled-components'
 
 export const LoginStyled = styled.section`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.2fr 1.8fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     transition: all 0.2s ease-in-out;
-    & h1 {
-        margin: 0;
-        align-self: start;
-    }
+    padding: 1rem;
     & button {
-        align-self: start;
         font-size: ${({ theme }) => theme.fontsize.xxlarge};
     }
 `
