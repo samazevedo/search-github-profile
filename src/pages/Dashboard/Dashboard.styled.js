@@ -26,4 +26,9 @@ export const DashboardStyled = styled.div`
         justify-content: center;
         gap: 1rem;
     }
+    @media screen and (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        .user-followers-section {
+            flex-direction: column;
+        }
+    }
 `

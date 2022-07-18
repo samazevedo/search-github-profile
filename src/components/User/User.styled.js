@@ -7,6 +7,7 @@ export const UserStyled = styled.section`
     width: 100%;
     height: 100%;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     & .title {
         position: absolute;
         top: -1rem;
@@ -18,7 +19,6 @@ export const UserStyled = styled.section`
         color: ${({ theme }) => theme.colors.boneWhite};
         background-color: #000;
         border-radius: 0.2rem;
-
         border-bottom-left-radius: 0rem;
         border-bottom-right-radius: 0rem;
         margin-bottom: 0;
@@ -42,32 +42,50 @@ export const UserStyled = styled.section`
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: flex-start;
         padding: 1rem;
         width: 100%;
         height: 100%;
         gap: 1rem;
         & .user-name {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            & p {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                & svg {
+                    margin-right: 0.5rem;
+                    color: ${({ theme }) => theme.colors.macawGreen};
+                }
+            }
         }
         & .user-picture {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 7rem;
-            height: 7rem;
+            width: 6rem;
             background-color: ${({ theme }) => theme.colors.boneWhite};
-            border-radius: 7rem;
+            border-radius: 10rem;
             overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         & .user-follow-btn {
             display: flex;
             align-self: flex-start;
             align-items: flex-start;
-            color: ${({ theme }) => theme.colors.scubaBlue};
+            color: ${({ theme }) => theme.colors.bajaBlue};
             background: transparent;
-            border: 0.1rem solid ${({ theme }) => theme.colors.scubaBlue};
+            border: 0.1rem solid ${({ theme }) => theme.colors.bajaBlue};
             border-radius: 1rem;
             transition: all 0.3s ease-in-out;
             cursor: pointer;

@@ -6,6 +6,8 @@ export const FollowersStyled = styled.section`
     flex-direction: column;
     width: 100%;
     height: 100%;
+    margin-bottom: 1rem;
+
     & .title {
         position: absolute;
         top: -1rem;
@@ -48,9 +50,9 @@ export const FollowersStyled = styled.section`
         width: 3rem;
         height: 3rem;
         background-color: ${({ theme }) => theme.colors.boneWhite};
-        border-radius: 3rem;
+        border-radius: 4rem;
         overflow: hidden;
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
     & .follower-info {
         display: flex;

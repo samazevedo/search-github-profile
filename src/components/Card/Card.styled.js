@@ -10,5 +10,5 @@ export const CardStyled = styled.section`
     margin: 0 auto;
     padding: 0;
     border-radius: 0.2rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem ${({ theme }) => theme.colors.scubaBlue};
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);};
 `

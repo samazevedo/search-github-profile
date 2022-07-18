@@ -7,7 +7,9 @@ export const Search = () => {
             <form className='search-form'>
                 <input type='text' placeholder='Search' />
                 <FiSearch className='search-icon' />
-                <ButtonStyled type='submit'>Search</ButtonStyled>
+                <ButtonStyled type='submit' className='search-btn'>
+                    Search
+                </ButtonStyled>
             </form>
             <div className='requests'>
                 <span>Requests:</span> <span>47/60</span>{' '}

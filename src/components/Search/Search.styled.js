@@ -9,6 +9,7 @@ export const SearchStyled = styled.section`
     gap: 1rem;
     align-items: center;
     margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
     & .search-form {
         position: relative;
         display: flex;
@@ -61,5 +62,26 @@ export const SearchStyled = styled.section`
         height: 100%;
         font-size: ${({ theme }) => theme.fontsize.xlarge};
         align-self: center;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        & .search-form input {
+            font-size: ${({ theme }) => theme.fontsize.small};
+        }
+        & .search-btn {
+            font-size: ${({ theme }) => theme.fontsize.xsmall};
+            padding: 0.5rem;
+        }
+        & .search-form input::placeholder {
+            font-size: ${({ theme }) => theme.fontsize.small};
+        }
+        & .search-icon {
+            font-size: ${({ theme }) => theme.fontsize.xsmall};
+            height: 3rem;
+            width: 1.5rem;
+            margin-left: 0.1rem;
+        }
+        & .requests {
+            font-size: ${({ theme }) => theme.fontsize.medium};
+        }
     }
 `

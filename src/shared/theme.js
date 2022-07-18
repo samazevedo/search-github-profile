@@ -14,6 +14,7 @@ export const theme = {
         desktop: '1024px',
     },
     fontsize: {
+        xsmall: '0.6rem',
         small: '0.75rem',
         medium: '1rem',
         large: '1.25rem',

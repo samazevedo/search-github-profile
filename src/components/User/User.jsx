@@ -19,12 +19,14 @@ export const User = () => {
                         <img src={avatar_url} alt='user' />
                     </div>
                     <div className='user-name'>
-                        <h4>{name}</h4>
-                        <p>
-                            <FiTwitter /> @{twitter_username}
-                        </p>
+                        <div>
+                            <h4>{name}</h4>
+                            <p>
+                                <FiTwitter /> @{twitter_username}
+                            </p>
+                        </div>
+                        <button className='user-follow-btn'>Follow</button>
                     </div>
-                    <button className='user-follow-btn'>Follow</button>
                 </header>
                 <div className='user-body'>
                     <article className='user-intro'>
