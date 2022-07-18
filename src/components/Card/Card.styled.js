@@ -10,6 +10,5 @@ export const CardStyled = styled.section`
     margin: 0 auto;
     padding: 0;
     border-radius: 0.2rem;
-    box-shadow: 0 0.2rem 0.4rem ${({ theme }) => theme.colors.scubaBlue},
-        0 0.2rem 0.4rem ${({ theme }) => theme.colors.scubaBlue};
+    box-shadow: 0.1rem 0.1rem 0.1rem ${({ theme }) => theme.colors.scubaBlue};
 `

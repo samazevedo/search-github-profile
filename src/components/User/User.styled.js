@@ -1,13 +1,31 @@
 import styled from 'styled-components'
 
 export const UserStyled = styled.section`
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    & .title {
+        position: absolute;
+        top: -1rem;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        padding: 0 0.2rem;
+        font-size: ${({ theme }) => theme.fontsize.small};
+        color: ${({ theme }) => theme.colors.boneWhite};
+        background-color: #000;
+        border-radius: 0.2rem;
+
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+        margin-bottom: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: fit-content;
+    }
     & .user-card {
         display: flex;
         flex-direction: column;
