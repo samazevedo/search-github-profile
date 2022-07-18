@@ -6,8 +6,7 @@ export const Followers = () => {
     const { githubFollowers } = useGithubContext()
     return (
         <FollowersStyled>
-            <div className='title'>Followers</div>
-            <CardStyled>
+            <CardStyled className='followers-card'>
                 <article className='followers'>
                     {githubFollowers.map((follower, index) => {
                         const { avatar_url, name, github_url } = follower

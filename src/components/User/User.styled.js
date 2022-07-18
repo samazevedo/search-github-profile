@@ -6,30 +6,15 @@ export const UserStyled = styled.section`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    & .title {
-        position: absolute;
-        top: -1rem;
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
-        padding: 0 0.2rem;
-        font-size: ${({ theme }) => theme.fontsize.small};
-        color: ${({ theme }) => theme.colors.boneWhite};
-        background-color: #000;
-        border-radius: 0.2rem;
-        border-bottom-left-radius: 0rem;
-        border-bottom-right-radius: 0rem;
-        margin-bottom: 0;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: fit-content;
-    }
+    margin: 1rem;
     & .user-card {
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-top-left-radius: 0rem;
+        &::before {
+            content: 'user';
+        }
     }
     & .user-body {
         display: flex;

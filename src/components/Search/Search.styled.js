@@ -6,10 +6,9 @@ export const SearchStyled = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 1rem;
     align-items: center;
-    margin-bottom: 1rem;
     transition: all 0.3s ease-in-out;
+    margin: 1rem 1rem 1rem 1rem;
     & .search-form {
         position: relative;
         display: flex;

@@ -12,7 +12,6 @@ export const User = () => {
         githubUser
     return (
         <UserStyled>
-            <div className='title'>User</div>
             <CardStyled className='user-card'>
                 <header className='user-header'>
                     <div className='user-picture'>

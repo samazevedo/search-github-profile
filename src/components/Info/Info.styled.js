@@ -8,6 +8,7 @@ export const InfoStyled = styled.div`
     gap: 1rem;
     width: 100%;
     height: 100%;
+    margin: 1rem;
     /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 1rem 2rem;

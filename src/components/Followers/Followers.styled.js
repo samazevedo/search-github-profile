@@ -6,25 +6,16 @@ export const FollowersStyled = styled.section`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin-bottom: 1rem;
+    margin: 1rem;
 
-    & .title {
-        position: absolute;
-        top: -1rem;
+    & .followers-card {
         display: flex;
         flex-direction: column;
-        align-self: flex-start;
-        padding: 0 0.2rem;
-        font-size: ${({ theme }) => theme.fontsize.small};
-        color: ${({ theme }) => theme.colors.boneWhite};
-        background-color: #000;
-        border-radius: 0.2rem;
-        border-bottom-left-radius: 0rem;
-        border-bottom-right-radius: 0rem;
-        margin-bottom: 0;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: fit-content;
+        align-items: center;
+        border-top-left-radius: 0rem;
+        &::before {
+            content: 'followers';
+        }
     }
     & .followers {
         display: flex;
@@ -33,7 +24,10 @@ export const FollowersStyled = styled.section`
         justify-content: center;
         width: 100%;
         padding: 1rem;
+        max-height: 20rem;
+        overflow-y: scroll;
     }
+
     & .follower-item {
         display: flex;
         flex-direction: row;
@@ -42,6 +36,7 @@ export const FollowersStyled = styled.section`
         padding: 0.3rem;
         width: 100%;
         height: 100%;
+        margin-top: 1rem;
     }
     & .follower-picture {
         display: flex;

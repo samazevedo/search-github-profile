@@ -17,14 +17,10 @@ const Dashboard = () => {
         <ContainerStyled>
             <DashboardStyled>
                 <Navbar />
-                <div className='dashboard-container'>
-                    <Search />
-                    <Info />
-                    <section className='user-followers-section'>
-                        <User />
-                        <Followers />
-                    </section>
-                </div>
+                <Search />
+                <Info />
+                <User />
+                <Followers />
             </DashboardStyled>
         </ContainerStyled>
     )
